@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-A-Password!</title>
+
+    <!-- Bootstrap for a clean responsive layout -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+      
+    <header>
+    <nav class="header navbar navbar-dark bg-light">
+            <div class="navbar-brandhead ml-auto mr-auto p-0" href="index.html"><span> CREATE - A - PASSWORD! </span></div>
+    </header>
+
+<!-- first div container -->    
+    <div class="container bg-light mt-5" id="content">
+        
+<!-- header w/ padding on top & left -->    
+        <h4 class="pt-4 pl-3">Create Your Password...</h2>
+<!-- line w/ margin 3 -->            
+        <hr class="m-3">
+<!--    
+     Container holding the input function & the buttons, the input has a placeholder acting as 
+     presented text as to what will be created when using the buttons below.  Buttons use the onclick 
+     to call to the js functions styled w/ bootstrap.  Once copy button is pressed it alerts the user
+     that the password has been copied. 
+-->
+        <div class="container">
+          
+            <input class="container bg-light text-center" type="text" id="display" placeholder="Your randomly generated password..."> 
+
+        </div>
+        <div class="mb-3">
+            <button onclick="generate()" class="btn btn-info rounded-pill ml-4 mb-4 mt-3">Generate Password</button>
+            <button onclick="copyPassword()" class="btn btn-secondary rounded-pill mr-4 mb-4 mt-3 float-right">
+                Copy to Clipboard
+            </button>
+            
+        </div>
+
+         <script src="script.js"></script>
+
+        <footer class="footer navbar fixed-bottom navbar-dark bg-light">
+                <div class="navbar-brandfoot ml-auto mr-auto p-0" href="index.html"><span>&copy; Adam Toomey | 2019</span></div>
+              </footer>
+              </div>
+
+</body>
+
+
+
+</html>
